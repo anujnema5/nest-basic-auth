@@ -14,6 +14,6 @@ export class AuthController {
     @Get('me')
     @UseGuards(AuthGuard)
     getUserInfo(@Request() request){
-        return request.user
+        return request
     }
 }
